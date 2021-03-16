@@ -12,8 +12,9 @@ public class DigitsCounter {
         }
         Set<Character> numbers = new HashSet<>();
         for (Character item:s.toCharArray()) {
-            if (item >= '0' && item <= '9')
-            numbers.add(item);
+            if (item >= '0' && item <= '9') {
+                numbers.add(item);
+            }
         }
         return numbers.size();
     }
